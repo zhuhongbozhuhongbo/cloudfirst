@@ -1,0 +1,30 @@
+<configuration>
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                %n%d{yyyy-MM-dd HH:mm:ss.SSS}|%level|%class|%thread|%method|%line|%n%msg
+            </pattern>
+        </encoder>
+    </appender>
+
+
+<!--    <logger name="org.apache" level="error" additivity="false">-->
+
+<!--    </logger>-->
+
+<!--    <logger name="httpclient" level="error" additivity="false">-->
+
+<!--    </logger>-->
+
+<!--    <logger name="org.apache.ibatis" level="info" additivity="false"/>-->
+
+    <logger name="org.springframework" level="debug"/>
+    <root level="info">
+        <appender-ref ref="console"/>
+        <!--  <appender-ref ref="error"/>-->
+    </root>
+
+<!--    http://www.merryyou.cn/2017/03/29/springbootcannot-resolve-template-loader-path-classpathtemplates-t-o-java-io-file-using-springtemplateloader-as-fallback/-->
+<!--    <logger name="org.springframework.web" level="trace"/>-->
+
+</configuration>
