@@ -32,9 +32,9 @@ public class AskController {
         return askHelloFromService;
     }
 
-    @Bean
-    @LoadBalanced
-    public RestTemplate restTemplate() {
-        return new RestTemplate();
-    }
+//    @Bean
+//    @LoadBalanced//注意：此处@LoadBalanced用于配置负载均衡，此段代码已迁移到com.cxgc.serviceribbon.config.RestTemplateConfig
+//    public RestTemplate restTemplate() {
+//        return new RestTemplate();
+//    }
 }
